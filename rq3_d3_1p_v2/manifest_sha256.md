@@ -1,0 +1,19 @@
+# Manifest SHA-256 — D3-1P v2
+
+Trạng thái: **PARTIAL**. Chưa được người nghiên cứu phê duyệt. Khóa giao thức = SHA-256 của tệp này, do người nghiên cứu ghi lại khi duyệt.
+
+```
+c4b70b44ca1bb70e4f2d9c484312703625027db3d97a57059a995f3ddb266088  D3-1_protocol_v2.md
+2e551eeac2f535e243075b26f693b498b8da9cca47ace09e94cee9f1418fc572  metric_dictionary_v2.md
+3f0a0650824352c5c6d36010548d3a2b3f814ee4f59c591c9ec9de8350906399  metric_dictionary_v2.csv
+48d990055cc38c482f33269d2f4ba57ba3d1d45f396f8f2dca376ddde24432d6  schema_join_spec_v2.md
+aad94bc98930681f6eddfb2de4c2881acb393d4418a0d9490a1da8ab29d3dafe  aggregation_specification_v2.md
+9a89c208594ff2b961bcd37e3c9c80666a973287995f1525f198739bec6549d9  failure_decision_rules_v2.md
+3e821eeddc2281e0223bdecefd9f89f8a36516ec963efb06c45f840397346e41  O1_O10_resolution.md
+ab2d21e4fe460e6545905cd24c90b8d70baaf6b2372257bc4373b748d369575b  arm_registry_mapping.md
+7d0c9be68deb31d5fe99fe8e494c78d3887c2fbca7e08f023044f78f5085f8b2  limitations_v2.md
+961eccf88a8cff066c2364feb1178d54a32a28ddb68f2cd01e1916879a492ae8  pre_execution_checklist_v2.md
+ddaf4a31cf52bdb39851cefadf689c0e9ef9b18fcaf9512fc961ca0e57192903  changelog_v1_to_v2.md
+```
+
+Không tự băm chính nó. Không chứa dữ liệu, dự đoán, ngưỡng hay kết quả Study 1/2.
