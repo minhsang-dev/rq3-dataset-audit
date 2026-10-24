@@ -1,0 +1,30 @@
+# Manifest SHA-256
+
+## Báo cáo đầu ra (`manifest_sha256.md` không tự băm chính nó)
+
+```
+155b0e6ffb6d2b9a2c0d0d263711bbdf83e5d29713d4df46ed76a42233e77412  README.md
+8efb842f38308f7405aad8a667e69b8c47d11443bee292f09b9b64d80fc5531a  source_evidence.csv
+341a0de078393dee7fbdde7ad0c8a301e4817b4fc41f4cd5686efc0ccbc833d9  ctu_label_taxonomy.md
+b9cafafd52d019c177ea702d8f00f258e45869e4d6480c84576a8fdcd752031d  schema_mapping.md
+d74078da5a7b2851fb640b9948bc8004d4c1e609f680f11923d8d0af9b5631b4  temporal_feasibility.md
+78475b1d5515f3bf8b7923498ceb4a787be178932c8b7c92f382a170fe1dbfa3  dataset_decision_matrix.csv
+31d11270e865ba59ab21a07cd8da3c39d4ba0ea99761d19ce43cd26cffc79e07  limitations_and_unknowns.md
+fc915fd41bec706e71b6143ac8a61ee060138d1cedf9f79f161a780b9b4ad018  final_verdict.md
+```
+
+## Nguồn đã tải (không commit; nằm ngoài repo)
+
+```
+4bde3c65f31836881f518fa5f648d56e67f625c8a494ad07ca68e970912c1059  dl/README.md
+c052dbe5795cecfd3be96e125fbcf1ad5f77c1f7da32959a73a6acd829181432  dl/summary.csv
+14ba1b8de3ba729fd503ed4899dfc9275d0deb42e0987c3a516df6aee9f17f8a  dl/zenodo.json
+820284e46fda26402ad7dbf714a0537e9a1147bcb308cf925349a1a86a9b714c  dl/item.json
+b157f7fcf0f1f3bbbd1966e3d4203290feb08cb0275313dd8850875bb699d630  dl/thesis.pdf
+0688af7eb0d52233b5e14908f6d9d9d20b625f4eb12a918e84e8fcb79c7d5480  dl/cidds_wisent.pdf
+2c8ba5d2c2fc74da74b616db3825fe3764d8b5d551e77e98478f90169048b4c2  dl/cidds002_tr.pdf
+bf7461cdeab63b1a7093c0fd380b45ba54a2a69e8801f5954784cece052afb3b  sample/echo_head.bin
+f4bb007b5c17f751a7611ab191096f22fa7acd6bd14851a85c5c5d2450496e3d  sample/ad_head.bin
+```
+
+MD5 của README.md và summary_table.csv đã tải khớp checksum Zenodo (fb3c306850050470f013bac87f0d2403, 2ff3da15a7b58eb65482eeeaadcbd917). Hai tệp `*_head.bin` là 10 MiB đầu của archive (không phải archive hoàn chỉnh; không so MD5 với Zenodo).
