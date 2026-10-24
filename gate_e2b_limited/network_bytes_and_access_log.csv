@@ -1,0 +1,41 @@
+archive,range_start,range_end,http_code,bytes_new,bytes_reused,seconds,status,purpose
+Experiment-VM-Linux-Ubuntu2204-1,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Experiment-VM-Microsoft-Windows7AD-1,0,10485759,cache,0,10485760,0,reused,cached prefix from preflight
+Honeypot-Assistant-Amazon-Echo1stGen-1,0,10485759,cache,0,10485760,0,reused,cached prefix from preflight
+Hardware-Smartphone-Android-Nokia-TA1043-1,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Hardware-Smartphone-Android-Nokia-TA1043-1,500000,755999,206,256000,0,1.22,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Hardware-Smartphone-iOS-iPhone-Xs-1,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Hardware-Smartphone-iOS-iPhone-Xs-1,500000,755999,206,256000,0,1.18,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-2,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Experiment-VM-Microsoft-Windows7full-2,500000,755999,206,256000,0,0.95,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-2,756000,1011999,206,256000,0,0.91,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Hardware-Laptop-MacOS-Macbook-Air13in2015-1,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Hardware-Laptop-MacOS-Macbook-Air13in2015-1,500000,755999,206,256000,0,1.65,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Hardware-Laptop-MacOS-Macbook-Air13in2015-1,756000,1011999,206,256000,0,0.94,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Hardware-Laptop-MacOS-Macbook-Air13in2015-1,1012000,1267999,206,256000,0,0.92,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Hardware-Laptop-MacOS-Macbook-Air13in2015-1,1268000,1523999,206,256000,0,0.91,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-3,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Experiment-VM-Microsoft-Windows7full-3,500000,755999,206,256000,0,0.94,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-3,756000,1011999,206,256000,0,1.04,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-3,1012000,1267999,206,256000,0,0.92,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-TVAssistant-Google-ChromecastGen2-1,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Honeypot-TVAssistant-Google-ChromecastGen2-1,500000,755999,206,256000,0,1.04,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-TVAssistant-Google-ChromecastGen2-1,756000,1011999,206,256000,0,0.95,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-TVAssistant-Google-ChromecastGen2-1,1012000,1267999,206,256000,0,0.92,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-TVAssistant-Google-ChromecastGen2-1,1268000,1523999,206,256000,0,0.93,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-TVAssistant-Google-ChromecastGen2-1,1524000,1779999,206,256000,0,0.92,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-Minicomputer-RaspberryPi-Gen3-20,0,499999,cache,0,500000,0,reused,cached prefix from preflight
+Honeypot-Minicomputer-RaspberryPi-Gen3-20,500000,755999,206,256000,0,0.96,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-Minicomputer-RaspberryPi-Gen3-20,756000,1011999,206,256000,0,1.03,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-Minicomputer-RaspberryPi-Gen3-20,1012000,1267999,206,256000,0,1.02,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-Minicomputer-RaspberryPi-Gen3-20,1268000,1523999,206,256000,0,1.03,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Honeypot-Minicomputer-RaspberryPi-Gen3-20,1524000,1779999,206,256000,0,0.94,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,0,1499999,cache,0,1500000,0,reused,cached prefix from preflight
+Experiment-VM-Microsoft-Windows7full-1,1500000,1755999,206,256000,0,0.95,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,1756000,2011999,206,256000,0,0.91,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,2012000,2267999,206,256000,0,0.91,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,2268000,2523999,206,256000,0,1.0,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,2524000,2779999,206,256000,0,0.94,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,2780000,3035999,206,256000,0,0.95,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+Experiment-VM-Microsoft-Windows7full-1,3036000,3291999,206,256000,0,0.92,ok,extend prefix to end of day-2023-02-22 conn.log.labeled
+TOTAL,,,,7168000,26471520,,,new bytes this gate (budget 20000000); failed requests: 0
