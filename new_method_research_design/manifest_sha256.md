@@ -1,0 +1,14 @@
+# Manifest SHA-256 — new method research design
+
+Verdict: **GO_FOR_PILOT_PROTOCOL**. Không tự băm.
+
+```
+5e5fbe392076eceeff97d6d96b3b246623d07d806edda318f637b7f0cf9d2d0f  problem_selection.md
+cf12f8fa04cc02ddf5cf922d9ef995b0b25b269c73563752ebe623a82f91d6c1  baseline_and_prior_art.md
+1a519e5ffdad67561af8e8ebad72a4304b968ec9e96855b6a8b929f10e47f6be  proposed_method_spec.md
+8562b1fa18e40a221a3e2f73c45c734d4e26947835c099cbd5b86cbd482aa28b  minimum_experiment_protocol.md
+b09ced947c795b6e37b53a316aeb0769ab16a708b19b670d9c42f5e770229659  data_and_compute_requirements.md
+558b855f2e54e9a2c2a4cda2b90b333d6795e291bdbf6f73e201297a81098370  final_verdict.md
+```
+
+Prior art mới đọc: CURE arXiv:2606.18677v1 SHA-256 b3e6e0c3ceaa0fcb4aab1bc878c0a120da555ecc39d93cb739325ca3bb9db2a4.
