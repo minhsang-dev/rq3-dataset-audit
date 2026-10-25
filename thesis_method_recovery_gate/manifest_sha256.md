@@ -1,0 +1,13 @@
+# Manifest SHA-256 — thesis method recovery gate
+
+Verdict: **NO_GO**. Không tự băm.
+
+```
+9b2620d424104ef7c7380a898b52debf09528f015791e2f443c62027d7c74454  closed_directions_registry.md
+fca45186c2299e78ec87752ddaee082cb597a02bb0ded9dda79525c873e1be72  improvement_opportunities.md
+89595c98290e96d46fc7b68edad38158c7f33966d6535d5a25aefde53efe9e52  baseline_and_evidence_matrix.md
+2b1703638f6b69f60027b68ef26b3408db57927a06bf2838955399b5b5f309c5  minimum_validation_path.md
+828dbd07b60e863dd46c4b02e4d13498cd13b8f521e5e41edcfb18138564c4aa  final_verdict.md
+```
+
+Prior art mới đọc: arXiv:2502.16840v2 (DualFIFO) SHA-256 ce332c3cc90da61b2f5aea38b2201e2a42682885ab2303f5c5d384a4202ce747; arXiv:2610.05352v1 SHA-256 91dda64cdf6f81636754c31fd31961d4afa9e82f0600ea1036eb0c4e05a218d4.
