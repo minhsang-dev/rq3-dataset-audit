@@ -26,6 +26,10 @@ Không có cơ chế ngoài P0/P1/P2, IPW, gain tuning, clipping và cập nhậ
 
 Tầng tuần tự anytime-valid trùng test martingale/e-process/e-BH/e-LOND đã công bố; không khác sequential peer-score cùng bằng chứng và cơ hội dừng. Hướng C trong mục 4 coi như đã xét và đóng. Báo cáo: [`dop_sequential_eprocess_gate/final_verdict.md`](dop_sequential_eprocess_gate/final_verdict.md). DoP NO-GO Level 2/3 giữ nguyên.
 
+## 1d. Temporal context cache — **HOLD_ACCESS**
+
+Mã wrapper/runner TabFM/TabICL và hồ sơ K1–K3 MISSING trong Cloud. Trên bằng chứng hiện có, khác biệt kỹ thuật = NONE (context recent liên tiếp không chung bản ghi; TabICL `kv_cache`/TabPFN `fit_with_cache` đã có). Báo cáo: [`temporal_context_cache_gate/final_verdict.md`](temporal_context_cache_gate/final_verdict.md).
+
 ## 2. Trạng thái giữ nguyên (không đổi bởi lần cập nhật này)
 
 | Hạng mục | Trạng thái | Nguồn |
