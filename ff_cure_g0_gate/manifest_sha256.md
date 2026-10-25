@@ -1,10 +1,11 @@
-# Manifest SHA-256 — FF-CURE G0
+# Manifest SHA-256 — FF-CURE G0 (chạy lại)
 
-Verdict: **G0_HOLD** (HOLD_MISSING_INPUT). family_recurrence_counts.csv không được tạo. Không tự băm.
+Verdict: **G0_FAIL**. Input ZIP SHA-256 a5f34a1c2df55a884c6909d97e61c50e3faf8fc49bea14a640a6a93f718f1068. Không tự băm.
 
 ```
-a976eb5f5fc983135b802ab73735819fd52f6a3d3ab73297fe1226e55620e1cc  source_inventory.md
+e8d772fb29b325fbe87ab06f91d269e5f887d05f1ef477bcae630366a0414c37  source_inventory.md
 27cd4cdfe9da280b0d7de42a8f5544608b70f6105c6b8b03d9949d7543f6bf94  eligibility_definition.md
-19dcb4e88eaf1e2f789eb458bdeea06a87ec55cc3536adaecc61fcbd47aa938f  label_availability_audit.md
-407f5bfc7d4940d4e892689299bd5a56e5fad4012e2dda3d60f099c109956078  final_verdict.md
+8321e8ff71eecfd0fa029c48ddd8ccf5d806e9f1cdf0ec49a99e2c128d5f7ef9  family_recurrence_counts.csv
+072c7db59d3d52c2a6fac7f2eaac21d2df449f6111ee7187f10ef6123b1d5f23  label_availability_audit.md
+0b01f600aa221e3968e5f152e134a965d5a065767bcfd450cfbab13615d10d1c  final_verdict.md
 ```

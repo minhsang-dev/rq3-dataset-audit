@@ -1,23 +1,26 @@
-# Nguồn cho G0 — kiểm kê và provenance
+# Nguồn cho G0 (lần chạy lại) — kiểm kê và provenance
 
-**Kết quả: bảng family × day của Gate M KHÔNG có trong không gian làm việc Cloud → `HOLD_MISSING_INPUT`.**
+Lần trước: G0_HOLD vì thiếu bảng family × day. Lần này dùng ZIP do người nghiên cứu cung cấp: `ff_cure_g0_inputs.zip`, SHA-256 `a5f34a1c2df55a884c6909d97e61c50e3faf8fc49bea14a640a6a93f718f1068`, 8 tệp. Chỉ dùng dữ liệu trong ZIP; không sao chép dữ liệu nguồn vào repo.
 
-## Đã tìm ở đâu
-| Vị trí | Kết quả |
+## Toàn vẹn
+`manifest_sha256.md` trong ZIP là manifest đầu ra gốc của Gate M (31 tệp). 7 tệp có trong ZIP **khớp** SHA-256 và kích thước trong manifest đó:
+- daily_family_counts.csv (37.362 B, 2eb44326…)
+- transition_family_status.csv (fe75f516…)
+- day_coverage_and_gaps.csv (c25e26fd…)
+- count_reconciliation.csv (042028bf…)
+- dataset_identity_and_hashes.csv (da114112…)
+- metadata_quality_report.md (ff3604a0…)
+- source_evidence_and_scope.md (4f3fe24d…)
+
+`final_verdict.md` của Gate M (58f634e8…) có trong manifest và trùng hash với bản trích trong gói handoff (file 13). Manifest không tự băm; mức tin cậy giới hạn ở chuỗi manifest do người nghiên cứu cung cấp.
+
+## Kiểm tra trước khi đếm
+| Mục | Kết quả |
 |---|---|
-| Repository `minhsang-dev/rq3-dataset-audit`, nhánh `claude/sleepy-cray-jhn01z` (HEAD 78509ad, đã fetch origin) | 9 thư mục báo cáo do Claude tạo; **không có** CSV/Parquet/JSON nào chứa count theo family × day. Tìm theo tên và nội dung (`gate_m`, family/day, Attack count): không có |
-| Gói bàn giao `claude_hybrid_handoff.zip` (SHA-256 179fd164…53; 18/18 tệp khớp manifest) | Chỉ có trích dẫn verbatim `final_verdict.md` của Gate M trong file 13 (nguồn `D:\Personal\PhD\IUH\rq3_gate_m_metadata_20261024\final_verdict.md`, SHA-256 `58f634e85c210b1ad24437401af832b6c7582ee20e10cf2c1143cc756809d56d`) |
-| Hệ thống tệp phiên Cloud (tìm theo tên `gate_m`, family/day, metadata matrix) | Không có |
-
-## Gate M cho biết gì (mức tổng hợp — không đủ để đếm)
-| Mục | Giá trị trong trích dẫn | Đủ cho G0? |
-|---|---|---|
-| Dataset/phiên bản | NF-ToN-IoT-v3 (27.520.260 dòng, 7 ngày UTC, 9 family thô; Development), NF-CICIDS2018-v3 (20.115.529 dòng, 11 ngày UTC, 14 family thô; Development), NF-UNSW-NB15-v3 (2.365.424 dòng, 3 ngày; exploratory stress-test, NOT CLEAN). Archive SHA khớp tham chiếu; member CSV có SHA-256 | Định danh có; count không |
-| Định nghĩa family/benign | `Attack` raw (family) và `Label` (1 = attack) theo prereg Study 1 §2; 21 dataset-day đối soát family/attack/benign PASS | Định nghĩa có; bảng không |
-| Count family × day | **Không có**, chỉ có câu tổng hợp "A qua ngày lịch min20 = 8 families (ToN), 11 (CIC)" | **Không** — không được suy count từ đây |
-| Thứ tự thời gian / transition | 12 transition Study 1 (file 07 §2, file 10): ToN 2019-04-23→…→04-29; CIC 2018-02-14→15, 15→16, 16→20, 20→21, 28→03-01, 03-01→03-02 | Có |
-| Vai trò | ToN/CIC = Development (đã phơi nhiễm); UNSW không sạch | Có |
-| Ngưỡng low-volume/recurrence khóa trước | Không có trong Gate M; trong `new_method_research_design/` có ký hiệu `n_hist`, `q` nhưng **chưa có giá trị** | Xem `eligibility_definition.md` |
-| Đường dẫn bảng chi tiết | Gate M nhắc "matrix" và "metadata report" (`xem matrix`) nằm trong thư mục local `D:\Personal\PhD\IUH\rq3_gate_m_metadata_20261024\` | Tên tệp chính xác và hash: **UNKNOWN** |
-
-Không tạo, đoán hay suy count. `family_recurrence_counts.csv` **không được tạo**.
+| Dataset identity | NF-ToN-IoT-v3 (archive SHA b3b6256e…, member SHA 53ec8f46…, 27.520.260 dòng); NF-CICIDS2018-v3 (7399bdef…, 242a6971…, 20.115.529 dòng; tương đương chính thức với NF-CSE-CIC-IDS2018-v3 **UNVERIFIED**); NF-UNSW-NB15-v3 (ngoài phạm vi). Archive SHA trùng với Study 1 (file 07) |
+| Ngày UTC | `utc_day` từ `FLOW_START_MILLISECONDS` (epoch ms UTC). 7 ngày ToN, 11 ngày CIC. Mọi ngày gắn cờ `BOUNDARY_OR_PARTIAL_OBSERVED_DAY`, `complete_monitored_day_verified=False` |
+| Taxonomy | Cột `Attack`; Benign + 9 họ ToN, Benign + 14 họ CIC. Mỗi (dataset, ngày) liệt kê đủ danh mục họ (kể cả n = 0) → danh mục nhất quán giữa các ngày trong cùng dataset |
+| Định nghĩa | Benign: n_attack = 0; mọi họ khác: n_benign = 0 (đã kiểm từng dòng); `n_invalid_label` = 0 ở mọi dòng |
+| Mẫu số | Tổng theo ngày = `day_total`; tổng attack của họ = `source_attack_n`; benign khớp; **21/21 dataset-day đối soát PASS** với count_reconciliation.csv |
+| Transition | 12 transition Study 1 (file 07 §2). Ngày giữ lại theo prereg là ≥ 100.000 dòng → CIC 2018-02-27 (828 dòng) bị loại khỏi lịch sử. CIC 02-16→02-20 cách 3 ngày lịch, giữ nguyên |
+| Thời điểm xác nhận nhãn | `confirmation_time_column = NOT FOUND` ở cả ba nguồn |
