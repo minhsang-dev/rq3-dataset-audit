@@ -1,0 +1,11 @@
+# Manifest SHA-256 — M7
+
+Verdict: **SHARED_OR_MIXED_FAILURE**. Input: 14_matched_lightgbm_tabfm_comparisons.csv SHA-256 5078e32146e1e0d6294395c1aade1f554a5f8ee085217ca52da207c6ac7bf6c0. Không tự băm.
+
+```
+dbcece1206f5a9a310783c33af0754744deb21e7e3600624e463411f6ba005fc  input_and_pair_readiness.md
+60f64b6a0c6b66c219c7bcfad3159b554c8fab6f790a7c218381c95aff71dcb5  failure_pair_matrix.csv
+60b326922da862d276f7bd09204172561d68a102d5232ae5af6560eefc4cf801  score_distribution_diagnostics.md
+862967a3309a6f5d170767cb151f45444893a170d77476070ef8821a86deb19b  transition_level_summary.md
+536579ac5b4fbe31a015f50bb38e79544e2ee1a7607ed1e7649221d3822b685c  final_verdict.md
+```
