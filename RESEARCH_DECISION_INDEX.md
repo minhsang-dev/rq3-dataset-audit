@@ -1,6 +1,6 @@
 # Research decision index
 
-**Cập nhật lần cuối:** 2026-10-25 (lần ghi RQ3-A NO-GO).
+**Cập nhật lần cuối:** 2026-10-25 (thêm RQ4 small-dataset readiness NO-GO).
 
 Tệp này **chỉ là chỉ mục**. Nó không thay thế, không sửa và không làm mất hiệu lực phán quyết hay artifact khóa nào. Nguồn có thẩm quyền là các báo cáo được liên kết bên dưới, cùng manifest SHA-256 của từng thư mục. Sổ `thesis_method_recovery_gate/closed_directions_registry.md` vẫn giữ nguyên, vì nó nằm trong manifest của gate đó; các mục phát sinh sau gate đó được ghi ở đây.
 
@@ -17,6 +17,10 @@ Tệp này **chỉ là chỉ mục**. Nó không thay thế, không sửa và kh
 | Lý do 5 | Chưa xác nhận held-out độc lập; giả định label shift bị hạn chế (10/12 transition là `new_class`) |
 | Báo cáo | [`decision.md`](rq3_a_pre_feasibility_audit/decision.md) · [`data_inventory.md`](rq3_a_pre_feasibility_audit/data_inventory.md) · [`prior_art_overlap.md`](rq3_a_pre_feasibility_audit/prior_art_overlap.md) · [`minimum_validation_requirements.md`](rq3_a_pre_feasibility_audit/minimum_validation_requirements.md) · [`manifest_sha256.md`](rq3_a_pre_feasibility_audit/manifest_sha256.md) |
 | Hệ quả | A **không** nằm trong danh sách đóng góp phương pháp dự kiến của luận án. Không replay, không tìm ngưỡng và không hiệu chỉnh trên vector đã lưu để "thử gain" |
+
+## 1b. RQ4 / DA-FAR — CIC-IDS2017 Improved readiness: **NO-GO**
+
+Không có cơ chế ngoài P0/P1/P2, IPW, gain tuning, clipping và cập nhật trễ chuẩn; đổi dataset không tạo tính mới. Baseline mạnh phải vượt: conformal PID [25] với cùng phản hồi trễ/IPW. Phơi nhiễm CIC-IDS2017 của E1–E1.3 chưa xác lập. Báo cáo: [`rq4_small_dataset_readiness/decision.md`](rq4_small_dataset_readiness/decision.md). DA-FAR E1.3 NO-GO giữ nguyên.
 
 ## 2. Trạng thái giữ nguyên (không đổi bởi lần cập nhật này)
 
