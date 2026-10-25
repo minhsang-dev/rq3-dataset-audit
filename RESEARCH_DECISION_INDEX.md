@@ -22,6 +22,10 @@ Tệp này **chỉ là chỉ mục**. Nó không thay thế, không sửa và kh
 
 Không có cơ chế ngoài P0/P1/P2, IPW, gain tuning, clipping và cập nhật trễ chuẩn; đổi dataset không tạo tính mới. Baseline mạnh phải vượt: conformal PID [25] với cùng phản hồi trễ/IPW. Phơi nhiễm CIC-IDS2017 của E1–E1.3 chưa xác lập. Báo cáo: [`rq4_small_dataset_readiness/decision.md`](rq4_small_dataset_readiness/decision.md). DA-FAR E1.3 NO-GO giữ nguyên.
 
+## 1c. Sequential DoP (e-process) — **NO-GO**
+
+Tầng tuần tự anytime-valid trùng test martingale/e-process/e-BH/e-LOND đã công bố; không khác sequential peer-score cùng bằng chứng và cơ hội dừng. Hướng C trong mục 4 coi như đã xét và đóng. Báo cáo: [`dop_sequential_eprocess_gate/final_verdict.md`](dop_sequential_eprocess_gate/final_verdict.md). DoP NO-GO Level 2/3 giữ nguyên.
+
 ## 2. Trạng thái giữ nguyên (không đổi bởi lần cập nhật này)
 
 | Hạng mục | Trạng thái | Nguồn |
@@ -48,7 +52,7 @@ Không có cơ chế ngoài P0/P1/P2, IPW, gain tuning, clipping và cập nhậ
 | Mã (lượt gợi ý 2026-10-25) | Mô tả ngắn | Trạng thái | Ghi chú chồng lấn đã biết |
 |---|---|---|---|
 | B | TabFM trên cloud làm "thầy" cập nhật LightGBM ở biên bằng nhãn mềm cho flow chưa nhãn | NOT_OPENED | Gần chưng cất ở Study 2 (inconclusive) và họ C-R3/B13; chưa kiểm prior art |
-| C | DoP tuần tự bằng e-process | NOT_OPENED | Người nghiên cứu lưu ý: phải vượt một đối chứng anytime-valid tuần tự đúng chuẩn, không chỉ vượt Fisher cố định |
+| C | DoP tuần tự bằng e-process | **CLOSED (NO-GO, mục 1c)** | Người nghiên cứu lưu ý: phải vượt một đối chứng anytime-valid tuần tự đúng chuẩn, không chỉ vượt Fisher cố định |
 | D | Giảm bộ nhớ nạp TabFM (bf16/int8/nạp lười) | NOT_OPENED | **Có khả năng trùng RQ1 C1 (NO-GO, "chưa có cơ chế khác compression/loader chuẩn")** theo sổ hướng đã đóng |
 
 Việc mở bất kỳ mục nào ở bảng 4 cần quyết định riêng của người nghiên cứu, kèm một bước đối chiếu với `closed_directions_registry.md` và với chỉ mục này **trước** khi đặc tả.
