@@ -30,6 +30,14 @@ Tầng tuần tự anytime-valid trùng test martingale/e-process/e-BH/e-LOND đ
 
 Mã wrapper/runner TabFM/TabICL và hồ sơ K1–K3 MISSING trong Cloud. Trên bằng chứng hiện có, khác biệt kỹ thuật = NONE (context recent liên tiếp không chung bản ghi; TabICL `kv_cache`/TabPFN `fit_with_cache` đã có). Báo cáo: [`temporal_context_cache_gate/final_verdict.md`](temporal_context_cache_gate/final_verdict.md).
 
+## 1e. RQ3 LUCoS extension — **READY_FOR_LOCAL_PROTOTYPE** (không phải bằng chứng tính mới)
+
+LUCoS-CQ: LUCoS + hạn ngạch ρ cho cụm chặt nhỏ (chênh lệch mật độ kNN, He & Carbonell 2007) trong không gian PIN, một vòng, không nhãn. Tính mới gia tăng. Báo cáo: [`rq3_lucos_cloud_review/final_recommendation.md`](rq3_lucos_cloud_review/final_recommendation.md).
+
+## 1f. RQ1 phase-aware memory planner — **HOLD**
+
+Thiếu mã TabICL 2.2.0 (`offload_mode=auto`); trùng RQ1 C2 (HOLD), giáp C3 (NO-GO). Báo cáo: [`rq1_memory_planner_cloud_review/final_recommendation.md`](rq1_memory_planner_cloud_review/final_recommendation.md).
+
 ## 2. Trạng thái giữ nguyên (không đổi bởi lần cập nhật này)
 
 | Hạng mục | Trạng thái | Nguồn |
